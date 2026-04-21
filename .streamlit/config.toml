@@ -1,0 +1,4 @@
+# Streamlit 서버 설정
+# 파일 업로드 한도: 기본 200MB → 1000MB(1GB)로 상향
+[server]
+maxUploadSize = 1000

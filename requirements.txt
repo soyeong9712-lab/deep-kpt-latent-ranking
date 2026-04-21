@@ -1,0 +1,12 @@
+from pyngrok import ngrok
+import os
+
+# ngrok 인증 토큰 설정 (본인 계정)
+ngrok.set_auth_token("YOUR_NGROK_AUTHTOKEN")
+
+# Streamlit 실행 (포트 8501)
+os.system("streamlit run src/app.py &")
+
+# ngrok 터널 열기
+public_url = ngrok.connect(8501)
+print(f"[*] 외부 접속 주소: {public_url}")

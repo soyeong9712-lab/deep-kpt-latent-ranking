@@ -1,0 +1,25 @@
+# 환경
+.venv/
+venv/
+__pycache__/
+
+# 데이터
+data/
+*.csv
+*.xlsx
+
+# 모델
+*.pt
+*.pth
+*.npy
+
+# 노트북
+*.ipynb
+
+# 이미지 결과
+*.png
+*.jpg
+*.jpeg
+
+# 기타
+.vscode/
